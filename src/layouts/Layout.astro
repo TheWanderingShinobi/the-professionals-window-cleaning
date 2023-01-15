@@ -1,35 +1,24 @@
 ---
-export interface Props {
-	title: string;
-}
+import BaseHead from "../components/BaseHead.astro";
 
-const { title } = Astro.props;
+import NavBar from "../components/NavBar.astro";
+import "@fontsource/nunito";
+
+const { title, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <!--Main Head of Site -->
+
+  <BaseHead title={title} />
+
+  <!--NaveBar -->
+
+  <NavBar />
+
+  <body class="font:nunito bg-slate-300">
+    <slot> Default Text</slot>
+   
+	<script src="/src/app.js"></script>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
