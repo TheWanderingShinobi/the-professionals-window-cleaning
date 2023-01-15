@@ -1,0 +1,66 @@
+---
+import { SITE_TITLE } from "../config";
+---
+
+<header>
+  <nav class="w-full top-0 bg-white z-10 dark:bg-slate-900">
+    <div class="container mx-auto py-5 flex items-center justify-between">
+      <div class="flex item-center gap-2">
+        <img class="w-40 " src="/src/images/home/logo.png" alt="logo" />
+        <span
+          class="text-2xl font-nunito font-bold text-indigo-900 py-5 dark:text-white"
+          >The Professionals.</span
+        >
+      </div>
+      <ul
+        class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+      >
+        <li class="hover:text-blue-500">
+          <a href="/">Home</a>
+        </li>
+        <li class="hover:text-blue-500">
+          <a href="about">About Me</a>
+        </li>
+        <li class="hover:text-blue-500 ">
+          <a href="blog">Blog</a>
+        </li>
+        <li class="hover:text-blue-500">
+          <a href="projects">Projects</a>
+        </li>
+        <li class="hover:text-royal">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <img
+        src="./src/images/home/moon.png"
+        class="hidden md:block w-5 cursor-pointer"
+        alt="moon"
+      />
+      <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+        <div class="w-6 h-0.5 bg-black"></div>
+        <div class="w-6 h-0.5 bg-black"></div>
+        <div class="w-6 h-0.5 bg-black"></div>
+      </div>
+      <ul
+        id="menu"
+        class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+      >
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="about">About Me</a>
+        </li>
+        <li>
+          <a href="blog">Blog</a>
+        </li>
+        <li>
+          <a href="projects">Projects</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
