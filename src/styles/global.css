@@ -1,4 +1,10 @@
-code {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #e7ecef;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  color: #0788f1;
 }
