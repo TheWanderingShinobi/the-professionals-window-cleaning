@@ -6,21 +6,21 @@
         <div class="grid lg:grid-cols-2 lg:gap-x-12 items-center">
           <div class="mb-12 lg:mb-0">
             <div
-              class="block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12"
+              class="block rounded-lg shadow-lg bg-accent px-6 py-12 md:px-12"
             >
-              <h2 class="my-12 text-5xl font-bold tracking-tight leading-tight">
+              <h2 class="my-10 text-5xl font-bold tracking-tight leading-tight">
                 Are you ready to hire <br />
                 <span class="text-[#3296FF]">The Professionals?</span>
               </h2>
 
               <div
-                class="block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12"
+                class="block mt-2 rounded-lg shadow-lg bg-base-100 px-6 py-12 md:px-12"
               >
                 <div class="mb-6">
-                  <form class="" action="https://submit-form.com/a1kqloNd">
+                  <form action="https://submit-form.com/a1kqloNd">
                     <div class="grid md:grid-cols-2 md:gap-6">
                       <div class="mb-6">
-                        <label for="first name" class=""></label>
+                        <label for="first name"></label>
                         <input
                           type="text"
                           id="nameFirst"
@@ -29,19 +29,29 @@
                           required=""
                           class="mb-2 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                         />
-                        <label for="last name" class=""></label>
+                        <label for="last name"></label>
                         <input
                           type="text"
                           id="nameLast"
                           name="nameLast"
                           placeholder="Last Name"
                           required=""
-                          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          class="mb-2 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                         />
                       </div>
                     </div>
 
-                    <label for="email" class=""></label>
+                    <label for="telephone"></label>
+                    <input
+                      type="tel"
+                      id="telephone"
+                      name="telephone"
+                      placeholder="Telephone"
+                      required=""
+                      class="mb-2 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    />
+
+                    <label for="email"></label>
                     <input
                       type="email"
                       id="email"
@@ -57,10 +67,33 @@
                       name="message"
                       placeholder="Message"
                       required=""
-                      class="mb-2 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                      class="mb-3 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                     ></textarea>
 
-                    <button class="btn btn-primary" type="submit">Send</button>
+                    <input
+                      type="checkbox"
+                      class="form-checkbox rounded text-base-100"
+                    /> Window Cleaning
+                    <br />
+                    <input
+                      type="checkbox"
+                      class="form-checkbox rounded text-accent"
+                    /> Eavestrough Cleaning
+                    <br />
+                    <input
+                      type="checkbox"
+                      class="form-checkbox rounded text-neutral"
+                    /> Power Washing
+                    <br />
+                    <input
+                      type="checkbox"
+                      class="form-checkbox rounded text-secondary"
+                    /> Repairs
+                    <br />
+
+                    <button class="btn btn-primary mt-2" type="submit"
+                      >Send</button
+                    >
                   </form>
                 </div>
               </div>
