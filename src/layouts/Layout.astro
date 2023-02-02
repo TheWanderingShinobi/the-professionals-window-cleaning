@@ -16,9 +16,8 @@ const { title, description } = Astro.props;
 
   <NavBar />
 
-  <body
-    class="font-nunito bg-base-100 dark:bg-gray-800 min-h-screen flex flex-col"
-  >
+  <body class="flex flex-col min-h-screen font-nunito bg-primary">
     <slot> Default Text</slot>
+    <script src="/src/app.js"></script>
   </body>
 </html>
