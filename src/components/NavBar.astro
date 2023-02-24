@@ -1,61 +1,59 @@
-<header>
-  <nav class="top-0 z-10 w-full bg-primary">
-    <div class="container flex items-center justify-between py-5 mx-auto">
-      <div class="flex gap-2 item-center">
-        <img class="w-40 item-center h-28" src="/logo.webp" alt="logo" />
-        <span class="hidden py-8 text-2xl font-bold text-white md:flex"
-          >The Professionals.</span
-        >
-      </div>
-      <ul
-        class="hidden space-x-10 text-sm font-bold uppercase md:flex text-base-100 dark:text-gray-100"
+<nav class="fixed top-0 z-10 w-full bg-primary">
+  <div class="container flex items-center justify-between py-5 mx-auto">
+    <div class="flex gap-2 item-center">
+      <img class="w-40 item-center h-28" src="/logo.webp" alt="logo" />
+      <span class="hidden py-8 text-2xl font-bold text-white md:flex"
+        >The Professionals.</span
       >
-        <li class="hover:text-blue-500">
-          <a href="/">Home</a>
-        </li>
-        <li class="hover:text-blue-500">
-          <a href="about">About</a>
-        </li>
-        <li class="hover:text-blue-500">
-          <a href="blog">Blog</a>
-        </li>
-        <li class="hover:text-blue-500">
-          <a href="projects">Projects</a>
-        </li>
-        <li class="hover:text-accent">
-          <a href="contact">Contact</a>
-        </li>
-      </ul>
-      <img
-        src="/moon.png"
-        class="hidden w-5 h-5 cursor-pointer md:block"
-        alt="moon"
-      />
-      <div id="hamburger" class="z-20 space-y-1 cursor-pointer md:hidden">
-        <div class="w-6 h-0.5 bg-accent"></div>
-        <div class="w-6 h-0.5 bg-accent"></div>
-        <div class="w-6 h-0.5 bg-accent"></div>
-      </div>
-      <ul
-        id="menu"
-        class="absolute top-0 left-0 hidden w-full p-10 space-y-10 text-center text-white bg-indigo-900 rounded-b-3xl"
-      >
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="about">About</a>
-        </li>
-        <li>
-          <a href="blog">Blog</a>
-        </li>
-        <li>
-          <a href="projects">Projects</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
     </div>
-  </nav>
-</header>
+    <ul
+      class="hidden space-x-10 text-sm font-bold uppercase md:flex text-base-100 dark:text-gray-100"
+    >
+      <li class="hover:text-blue-500">
+        <a href="/">Home</a>
+      </li>
+      <li class="hover:text-blue-500">
+        <a href="about">About</a>
+      </li>
+      <li class="hover:text-blue-500">
+        <a href="blog">Blog</a>
+      </li>
+      <li class="hover:text-blue-500">
+        <a href="projects">Projects</a>
+      </li>
+      <li class="hover:text-accent">
+        <a href="contact">Contact</a>
+      </li>
+    </ul>
+    <img
+      src="/moon.png"
+      class="hidden w-5 h-5 cursor-pointer md:block"
+      alt="moon"
+    />
+    <div id="hamburger" class="z-20 space-y-1 cursor-pointer md:hidden">
+      <div class="w-6 h-0.5 bg-white"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+    </div>
+    <ul
+      id="menu"
+      class="absolute top-0 left-0 hidden w-full p-10 space-y-10 text-center text-accent bg-primary rounded-b-3xl"
+    >
+      <li>
+        <a id="hLink" href="/">Home</a>
+      </li>
+      <li>
+        <a id="hlink" href="about">About</a>
+      </li>
+      <li>
+        <a id="hlink" href="blog">Blog</a>
+      </li>
+      <li>
+        <a id="hlink" href="projects">Projects</a>
+      </li>
+      <li>
+        <a id="hlink" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
