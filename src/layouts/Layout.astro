@@ -1,23 +1,26 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-
+// component import
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 import "@fontsource/nunito";
 
-const { title, description } = Astro.props;
+// style import
+
+const {
+  title = "The Professionals Window and Eaves Cleaning",
+  description = "Reliable and affordable window cleaning services. We offer a wide range of services, including regular window cleaning and spring/fall eavestrough cleaning.",
+} = Astro.props;
 ---
 
 <html lang="en">
-  <!--Main Head of Site -->
-
-  <BaseHead title={title} />
-
-  <!--NaveBar -->
-
-  <NavBar />
-
-  <body class="flex flex-col min-h-screen font-nunito bg-primary">
-    <slot> Default Text</slot>
+  <MainHead title={title} {description} />
+  <body class="flex flex-col min-h-screen font-nunito bg-primary"
+    ><NavBar />
+    <main>
+      <slot> Default Text</slot>
+    </main>
+    <Footer />
     <script src="/src/app.js"></script>
   </body>
 </html>
