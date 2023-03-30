@@ -1,22 +1,21 @@
-<astro>
-  <script>
-    const API_KEY = '137c6b7d8699b66c26438be31c68ada7';
-    const MOVIE_ID = '12345';
+---
+import Layout from "../layouts/Layout.astro";
+import FaqSection from "../components/home/FaqSection.astro";
+import DiscountSection from "../components/home/DiscountSection.astro";
+import CallNow from "../components/CallNow.astro";
+import ContactUs from "../components/ContactUs.astro";
+import HeroContact from "../components/contact/HeroContact.astro";
+---
 
-    async function fetchMovieDetails() {
-      const response = await fetch(`https://api.themoviedb.org/3/movie/${MOVIE_ID}?api_key=${API_KEY}`);
-      const data = await response.json();
-      return data;
-    }
-
-    export default {
-      async load() {
-        const movieDetails = await fetchMovieDetails();
-        console.log(movieDetails);
-      }
-    }
-  </script>
-
-  <h1>Movie Details</h1>
-  <p>Check the console for movie details.</p>
-</astro>
+<Layout
+  title="Contact| The Professionals Window Cleaning & Eavestrough Ltd."
+  description="Looking for a Professional Window Cleaning or Eavestrough Cleaning Service in Brampton? Call us The Professionals at 416-464-5542."
+>
+  <main>
+    <HeroContact />
+    <CallNow />
+    <ContactUs />
+    <FaqSection />
+    <DiscountSection />
+  </main>
+</Layout>
