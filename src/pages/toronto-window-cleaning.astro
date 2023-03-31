@@ -1,18 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroTorontoW from "../components/toronto/HeroTorontoW.astro";
-import ContactForm from "../components/ContactForm.astro";
 import FaqSection from "../components/home/FaqSection.astro";
 import DiscountSection from "../components/home/DiscountSection.astro";
 import CallNow from "../components/CallNow.astro";
----
+import ContactUs from "../components/ContactUs.astro";
 ---
 
-<Layout title="Window Cleaning Toronto"  description = "Looking for a Professional Window Cleaning or Eavestrough Cleaning Service in Toronto? Call us The Professionals at 416-464-5542.">
+---
+
+<Layout
+  title="Toronto Window Cleaning"
+  description="Looking for a Professional Window Cleaning or Eavestrough Cleaning Service in Toronto? Call us The Professionals at 416-464-5542."
+>
   <main>
     <HeroTorontoW />
     <CallNow />
-    <ContactForm />
+    <ContactUs />
     <FaqSection />
     <DiscountSection />
   </main>
