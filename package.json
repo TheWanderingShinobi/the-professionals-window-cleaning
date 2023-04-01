@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/cloudflare": "^6.2.2",
     "@astrojs/netlify": "^2.0.0",
-    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/sitemap": "^1.2.1",
     "@astrojs/tailwind": "^3.0.0",
     "@fontsource/nunito": "^4.5.11",
     "astro": "^2.1.9",
