@@ -19,9 +19,12 @@ import sitemap from "@astrojs/sitemap";
 import rome from "astro-rome";
 
 // https://astro.build/config
+import cloudflare from "@astrojs/cloudflare";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://selfhostlab.com",
   integrations: [tailwind(), compress(), robotsTxt(), sitemap(), rome()],
   output: "server",
-  adapter: netlify()
+  adapter: cloudflare()
 });
