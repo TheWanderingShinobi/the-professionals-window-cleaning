@@ -23,8 +23,8 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://selfhostlab.com",
-  integrations: [tailwind(), compress(), robotsTxt(), sitemap(), rome()],
-  output: "server",
-  adapter: cloudflare()
+	site: "https://theprofessionalswindowcleaning.com",
+	integrations: [tailwind(), compress(), robotsTxt(), sitemap(), rome()],
+	output: "server",
+	adapter: cloudflare(),
 });
