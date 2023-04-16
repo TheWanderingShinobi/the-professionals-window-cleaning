@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/cloudflare": "^6.2.2",
     "@astrojs/netlify": "^2.0.0",
+    "@astrojs/partytown": "^1.2.0",
     "@astrojs/sitemap": "^1.2.1",
     "@astrojs/tailwind": "^3.0.0",
     "@astrolib/seo": "^0.3.0",
