@@ -1,5 +1,6 @@
 ---
 import { AstroSeo } from "@astrolib/seo";
+import { GoogleAnalytics } from "astro-analytics";
 const { title, description } = Astro.props;
 ---
 
@@ -18,7 +19,7 @@ const { title, description } = Astro.props;
         href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
         rel="stylesheet"
     />
-
+    <GoogleAnalytics id="UA-170141530-1" />
     <AstroSeo
         canonical="https://theprofessionalswindowcleaning.com/"
         openGraph={{

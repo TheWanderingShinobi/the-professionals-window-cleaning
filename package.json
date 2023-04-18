@@ -19,6 +19,7 @@
     "@astrolib/seo": "^0.3.0",
     "@fontsource/nunito": "^4.5.11",
     "astro": "^2.1.9",
+    "astro-analytics": "^2.6.0",
     "astro-compress": "^1.1.28",
     "astro-critters": "^1.1.31",
     "astro-icon": "^0.8.0",
